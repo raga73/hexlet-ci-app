@@ -6,7 +6,7 @@ jobs:
   build:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
-     steps:
+    steps:
        - uses: actions/checkout@v4
        - run: make setup
        - run: make test 
