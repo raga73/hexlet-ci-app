@@ -1,5 +1,4 @@
 name: show-directory
-on: push
 jobs:
   runs-on: ubuntu-latest
     
