@@ -1,11 +1,11 @@
-name: show-directory
+name: test
+on: push
 jobs:
-  runs-on: ubuntu-latest
-    
-   steps:
+  build:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v4
       - run: make setup
-      - run: npm install
-      - run: npm run lint
-      - name: run tests
-        run: npm test
+      - run: make npm install
+      - run: make lint
+      - run: make test
